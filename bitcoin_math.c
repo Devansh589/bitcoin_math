@@ -898,7 +898,7 @@ void bnz_print(bnz_t *a, int32_t base, const char *txt) // print a in a given ba
                 printf("\n");
             }
             break;
-        default: // default for 2 to 64
+        default: // default for 2 to 63
             printf("%s", txt);
             if (bnz_is_zero(&tmp)) {
                 printf("0\n");
