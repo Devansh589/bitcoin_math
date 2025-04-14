@@ -2897,6 +2897,9 @@ void menu_2_1_normal_child(const char *version)
 
     printf("\n");
 
+    bnz_resize(&tmp, 32, 1); // ensure that the parameters sent to the hmac-512 function are padded with leading zeros
+    bnz_resize(&parent_chain_code, 32, 1); // ditto
+
     bnz_set_i32(&index, index_num);
     bnz_resize(&index, 4, 1);
     bnz_concatenate_bnz(&tmp, &parent_public_key_compressed, &index, 1);
