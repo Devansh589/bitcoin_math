@@ -82,7 +82,7 @@ Various comparison functions are implemented, returning -1, 0, or 1 according to
 
 Functions for addition, subtraction, multiplication and division (quotient and remainder) are implemented, with pre-processing of signs as appropriate.
 
-Finally, arbitrary precision implementations of the special functions of mod, mod power, and multiplicative modular inverse are implemented for use in the Secp256k1 elliptic curve math.
+Finally, arbitrary precision implementations of the special functions of mod, mod power, and modular multiplicative inverse are implemented for use in the Secp256k1 elliptic curve math.
 
 
 ### /* SECP256K1 */
