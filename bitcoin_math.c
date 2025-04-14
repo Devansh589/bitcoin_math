@@ -2692,7 +2692,7 @@ void get_str_input(char str[], int max_len) // get string from stdin with strlen
 {
     int i = 0, ch;
     while ((ch = getchar()) != '\n' && ch != EOF) {
-        if (i < max_len) str[i++] = ch;
+        if (ch >= 0 && i < max_len) str[i++] = ch;
     }
     str[i] = 0;
 }
